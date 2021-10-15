@@ -3,12 +3,13 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 // Routes
-import Home from "../containers/Home.js";
+import Auth from "../containers/Auth/index.js";
 
 const index = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      {/* auth routes mainly Login signup  */}
+      <Auth />
     </Switch>
   );
 };
